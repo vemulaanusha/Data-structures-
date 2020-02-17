@@ -1,0 +1,148 @@
+ #play{
+    background-color:black;
+    height: 70px;
+    width: 600px;
+    color: white;
+    line-height: 3.3;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#heading
+{
+    margin:0;
+    font-size:50px;
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+.grid
+{
+display: grid;
+padding: 10px;
+grid-row-gap:40px;
+grid-template-rows:auto 1fr;
+font-size:18px;
+}
+#ins,#del {
+  color:black;
+  font-size: 20px;
+  border: 0px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button {
+    background-color:rgba(26, 7, 48, 0.493);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+  }
+  .number {
+    background-color: rgb(5, 4, 4);
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    border-radius: 12px;
+
+  }
+  .modal.right.in .modal-dialog,
+.modal.second.in .modal-dialog{
+		position: fixed;
+		margin: 0px;;
+		bottom:0px;
+		right:0px;
+		width: 520px;
+		height: 80%;
+		margin-right:0px;
+	
+	}
+	.modal.right .modal-content,
+	.modal.second .modal-content{
+		height: 400px;
+		position: fixed;
+		overflow-y: auto;
+    
+	}
+	.modal.right .modal-body,
+	.modal.second .modal-body{
+		padding: 15px 15px 15px;
+	}
+  
+	.modal.right.fade .modal-dialog {
+		right: -400px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+	.modal.second.fade .modal-dialog{
+		right: -520px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	
+	.modal.second.fade.in .modal-dialog{
+		right: 0;
+	}
+
+
+	.modal-content {
+		border-radius: 0;
+		border: none;
+		margin-right: 0;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color:black;
+		color:white;
+  }
+  .demo {
+    padding-top: 60px;
+    padding-bottom: 110px;
+  }
+  
+  .btn-demo {
+    margin: 500px;
+    position: absolute;
+    padding: 12px 12px;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
+    background-color:rgba(26, 7, 48, 0.493);
+    top:148%;
+    left:0.0%;
+  }
+  .btn-demo:focus {
+    outline: 0;
+  }
+  
+  .btn-demo1 {
+    margin: 500px;
+    position: absolute;
+    padding: 12px 12px;
+    border-radius: 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color:rgba(26, 7, 48, 0.493);
+    top:148%;
+    left:16%;
+  }
+  .btn-demo1:focus {
+    outline: 0;
+  }

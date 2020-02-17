@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<!-- Mirrored from mini-5c76d.web.app/linked.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2020 10:32:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="linked.css">
+      <link rel="stylesheet" href="navbar.css">
+  </head>
+  <body>
+    <script src="linked.js">
+  </script>
+<div class="heading">
+<h3>Linked List</h3>
+</div>
+<div class="nav">
+  <ul>
+    <li><a href="stack2.html">STACK</a></li>
+    <li><a href="queue.html">QUEUE</a></li>
+    <li><a href="linked.html">LINKED LIST</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class=" dropbtn">Operations</button>
+  <div class="dropdown-content">
+  <p><input id="1" type="text" placeholder="number">
+    <input type="button"  onclick="ll.add(Number(document.getElementById('1').value));ll.size();ll.display()" value="add">
+    <input type="button"  id="bu" onclick="ll.remove(Number(document.getElementById('1').value));ll.size();ll.display()" value="remove"></p>
+      <p><input id="2" type="text" name="appendat" placeholder="index">
+        <input id="2.1" type="text" name="index" placeholder="value">
+        <input type="button" onclick="ll.addAt(Number(document.getElementById('2').value),Number(document.getElementById('2.1').value));ll.size();ll.display()" value="append at"></p>
+        <p><input type="text" id="2.2" placeholder="index">
+    <input type="button"  onclick="ll.removeAt(Number(document.getElementById('2.2').value));ll.size();ll.display()" value="remove at">
+    <input type="text" id="2.3" placeholder="removed value"></p>
+    <p><input id="3" type="text" name="element" placeholder="index">
+      <input type="button"  onclick="ll.elementAt(Number(document.getElementById('3').value));ll.size();ll.display()" value="element at">
+      <input type="text" id="3.1" placeholder="element at given index"></p>
+      <p><input id="4" type="text" name="indexOf" placeholder="value">
+        <input type="button"  onclick="ll.indexOf(Number(document.getElementById('4').value));ll.display()" value="index of">
+        <input type="text" id="4.1" placeholder="value at"></p>
+    <p><input type="button"  value="size">
+    <input id="5" type="text" name="size_is" value=""></p>
+
+    <p><input type="button"  onclick="ll.head()" value="head">
+      <input type="text" id="6" placeholder="headvalue"></p>
+      <button type="button"  onclick="ll.isEmpty();ll.display()" name="button">isEmpty?</button>
+      <input type="text" id="isEmpty" value=" ">
+
+</div>
+</div>
+<div align='center'>
+  <div class="nav-table">  <div id="row" class="nav-row"></div></div>
+</div>
+  </body>
+
+<!-- Mirrored from mini-5c76d.web.app/linked.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2020 10:32:38 GMT -->
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from mini-5c76d.web.app/stack2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2020 10:32:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stack Implementation</title>
+</head>
+<body>
+    <link rel='stylesheet' href='../maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="new_insert.js"></script>
+    <link rel="stylesheet" href="stack2.css">
+    <link rel="stylesheet" href="navbar.css">
+<h3 id="heading">Stack</h3>
+<div class="nav">
+<ul>
+    <li><a href="stack2.html">STACK</a></li>
+    <li><a href="queue.html">QUEUE</a></li>
+    <li><a href="linked.html">LINKED LIST</a></li>
+</ul>
+</div>
+<div class="grid">
+<div class="title">
+    <h2> what is stack</h2>
+  <p>Stack is a linear data structure which follows a particular order
+      in which the operations are performed. The order may
+      be LIFO(Last In First Out) or FILO(First In Last Out). 
+      <br>  
+    <b>Push:</b> Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition. <br>
+    <b>Pop:</b> Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the
+    stack is empty, then it is said to be an Underflow condition. <br>
+    <b>Peek or Top:</b> Returns top element of stack. <br>
+    <b>isEmpty:</b>Returns true if stack is empty, else false.    
+    </p>
+</div>
+<div class="stop">
+<h3>stack operations</h3>
+<img src="img/operations.png" width="400px" height="400px">
+</div>
+<div class="push_pop">
+    <h3>Algorithm for push operation
+    </h3>
+    <pre id="ins">
+Check if the stack is full or not.
+If the stack is full, then print error of overflow and exit the program.
+If the stack is not full, then increment the top and add the element.
+</pre>
+</div>
+    <div>
+           <h3>Algorithm for pop operation
+         </h3>
+    <pre id="del">
+Check if the stack is empty or not.
+If the stack is empty, then print error of underflow and exit the program.
+If the stack is not empty, then print the element at the top and decrement the top.
+</pre>
+</div>
+</div>
+<label>Insert values here</label>
+<div class="final">
+    <input type="number" name="is" id="in"> <br>
+    <input type="button" value="insert element" onclick="insert()">
+    <input type="button" value="pop an element" onclick="pop()">
+    <input type="button" value="peek element" onclick="peek()">
+    <input type="button" value="Isempty" onclick="isempty()">
+    <p id="alert"></p>
+    <div id="play" class="pp">
+        <p class="del"></p>
+    </div>
+</div>
+<div class="pseudo">
+    <h3>pseudo code for insertion</h3>
+<pre>
+push means inserting an element on to the top of the stack.
+lets define array of size 10,
+int a[10]
+Top<=-1 // stack is empty now.
+Push(x)// x is a element to be push. 
+lets take x=4 
+{
+ top<==top+1 
+/* top will initialize
+    to 1, now the top will be address to the 0 th index of array.*/ 
+a[Top]<==x // insert x in to the 0th index ofarray(a[0]<==4)// 
+}
+</pre>
+    <h3>pseudo code for deletion</h3>
+<pre>
+pop means deleting an element from top of the stack
+let define array of size 10,
+int a[10]
+Top<=-1 //stack is empty now
+if top=-1
+it removes the element from top of the stack
+top value get decrement by 1
+</pre>
+</div>
+</body>
+
+<!-- Mirrored from mini-5c76d.web.app/stack2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2020 10:32:36 GMT -->
+</html>

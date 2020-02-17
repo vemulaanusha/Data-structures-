@@ -1,0 +1,20 @@
+.nav {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin-left: 900px;
+    padding: 20px;
+    background-color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+    color: black;
+}
+
+li a {
+    text-decoration: none;
+}
